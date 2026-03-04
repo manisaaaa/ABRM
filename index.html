@@ -12,7 +12,7 @@ height:100vh;
 padding:50px;
 align-items:center;
 background:#fff7f2;
-margin-bottom:60px; /* FIX: space so image doesn't touch section 2 */
+margin-bottom:60px; /* space so image doesn't touch section 2 */
 }
 .text-area{
 width:50%;
@@ -95,21 +95,31 @@ color:#5a3a2e;
 .vision-section{
 background-image:url("https://i.ibb.co/93TTJrkT/cookies.jpg");
 background-size:cover;
-padding:80px;
+background-position:center;
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+margin-bottom:60px;
 }
 .vision-overlay{
-background:rgba(255,255,255,0.66);
+background:rgba(255,255,255,0.6); /* transparency 60% */
 text-align:center;
-padding:50px;
+width:80%;
+padding:60px;
+border-radius:15px;
 }
 .vision-overlay h2{
 font-family:"Footlight MT Light";
 font-weight:bold;
-color:#ffb347;
+font-size:48px;
+margin-bottom:20px;
 }
 .vision-overlay p{
 font-family:"Baskerville Old Face";
-color:#ffb347;
+font-size:26px;
+line-height:1.6;
+margin-bottom:40px;
 }
 
 /* SECTION 6 */
@@ -130,10 +140,10 @@ text-align:center;
 .contact-right{
 width:60%;
 font-family:"Baskerville Old Face";
-font-size:24px;   /* FIX: font size 24 */
+font-size:24px;
 font-weight:bold;
 color:black;
-padding-left:60px; /* FIX: push content more to the right */
+padding-left:60px; /* push content more to the right */
 }
 .highlight{
 color:#c47a5a;
@@ -221,17 +231,18 @@ Little Abrm Bakes is a home-based bakery that offers fresh and delicious mini de
 
 <!-- SECTION 5 -->
 <div class="vision-section">
-<div class="vision-overlay">
-<h2>Vision</h2>
-<p>Our vision is to become a trusted and loved mini bakery brand known for delicious small treats and beautiful presentation.</p>
+  <div class="vision-overlay">
+    <h2>Vision</h2>
+    <p>Our vision is to become a trusted and loved mini bakery brand known for delicious small treats and beautiful presentation.</p>
 
-<h2>Brand Value</h2>
-<p>
-Small things create big happiness...<br>
-Quality matters 😊<br>
-Homemade with love ❤️
-</p>
-</div>
+    <h2>Brand Value</h2>
+    <p>
+      We believe:<br>
+      Small things create big happiness...<br>
+      Quality matters 😊<br>
+      Homemade with love ❤️
+    </p>
+  </div>
 </div>
 
 <!-- SECTION 6 -->
