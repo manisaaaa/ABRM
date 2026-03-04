@@ -3,7 +3,14 @@
 <head>
 <title>Little ABRM Bakes</title>
 <style>
-body{margin:0;}
+body{
+margin:0;
+}
+
+/* COMMON SECTION SPACING */
+.section-gap{
+margin-bottom:60px;
+}
 
 /* SECTION 1 */
 .header-hero{
@@ -11,7 +18,6 @@ display:flex;
 height:100vh;
 padding:50px;
 align-items:center;
-margin-bottom:40px; /* space so it doesn't touch section 2 */
 }
 .text-area{
 width:50%;
@@ -36,9 +42,9 @@ background-size:cover;
 padding:80px;
 }
 .about-overlay{
-background:rgba(255,255,255,0.66); /* transparency 66 */
+background:rgba(255,255,255,0.66);
 display:flex;
-align-items:center; /* centers About Us vertically */
+align-items:center;
 padding:40px;
 }
 .about-title{
@@ -53,7 +59,7 @@ font-family:"Footlight MT Light";
 font-size:33px;
 }
 
-/* SECTION 3 & 4 (UNCHANGED) */
+/* SECTION 3 & 4 */
 .menu-section{
 padding:60px;
 text-align:center;
@@ -86,7 +92,7 @@ font-family:"Baskerville Old Face";
 color:#5a3a2e;
 }
 
-/* SECTION 5 (RESTORED ORIGINAL STYLE) */
+/* SECTION 5 */
 .vision-section{
 background-image:url("https://i.ibb.co/93TTJrkT/cookies.jpg");
 background-size:cover;
@@ -100,14 +106,14 @@ padding:50px;
 .vision-overlay h2{
 font-family:"Footlight MT Light";
 font-weight:bold;
-color:#ffb347; /* light orange */
+color:#ffb347;
 }
 .vision-overlay p{
 font-family:"Baskerville Old Face";
 color:#ffb347;
 }
 
-/* SECTION 6 (UNCHANGED) */
+/* SECTION 6 */
 .contact-section{
 display:flex;
 padding:60px;
@@ -130,7 +136,7 @@ text-align:center;
 font-family:"Gill Sans MT";
 font-size:20px;
 color:pink;
-margin-top:20px;
+margin:40px 0;
 }
 </style>
 </head>
@@ -138,7 +144,7 @@ margin-top:20px;
 <body>
 
 <!-- SECTION 1 -->
-<div class="header-hero">
+<div class="header-hero section-gap">
 <div class="text-area">
 <h1>Little ABRM Bakes</h1>
 <p>Tiny Bites, Big Happiness ✨</p>
@@ -149,7 +155,7 @@ margin-top:20px;
 </div>
 
 <!-- SECTION 2 -->
-<div class="about-section">
+<div class="about-section section-gap">
 <div class="about-overlay">
 <div class="about-title">About Us</div>
 <div class="about-text">
@@ -159,7 +165,7 @@ Little Abrm Bakes is a home-based bakery that offers fresh and delicious mini de
 </div>
 
 <!-- SECTION 3 -->
-<div class="menu-section">
+<div class="menu-section section-gap">
 <div class="menu-title">Take a Bite!</div>
 <div class="menu-grid">
 <div class="menu-item">
@@ -183,7 +189,7 @@ Little Abrm Bakes is a home-based bakery that offers fresh and delicious mini de
 </div>
 
 <!-- SECTION 4 -->
-<div class="menu-section">
+<div class="menu-section section-gap">
 <div class="menu-grid">
 <div class="menu-item">
 <img src="https://i.ibb.co/XxQN2dsF/Brownie-with-Icecream.jpg">
@@ -206,7 +212,7 @@ Little Abrm Bakes is a home-based bakery that offers fresh and delicious mini de
 </div>
 
 <!-- SECTION 5 -->
-<div class="vision-section">
+<div class="vision-section section-gap">
 <div class="vision-overlay">
 <h2>Vision</h2>
 <p>Our vision is to become a trusted and loved mini bakery brand known for delicious small treats and beautiful presentation.</p>
@@ -221,7 +227,7 @@ Homemade with love ❤️
 </div>
 
 <!-- SECTION 6 -->
-<div class="contact-section">
+<div class="contact-section section-gap">
 <div class="contact-left">
 We'd love to<br>hear from<br>you!
 </div>
