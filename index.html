@@ -5,12 +5,13 @@
 <style>
 body{margin:0;}
 
-/* SECTION 1 & 2 SAME AS BEFORE */
+/* SECTION 1 */
 .header-hero{
 display:flex;
 height:100vh;
 padding:50px;
 align-items:center;
+margin-bottom:40px; /* space so it doesn't touch section 2 */
 }
 .text-area{
 width:50%;
@@ -28,20 +29,23 @@ font-size:28px;
 .image-area{width:50%;}
 .image-area img{width:100%;border-radius:20px;}
 
+/* SECTION 2 */
 .about-section{
 background-image:url("https://i.ibb.co/1tjb0N3h/background-jpg.jpg");
 background-size:cover;
 padding:80px;
 }
 .about-overlay{
-background:rgba(255,255,255,0.66);
+background:rgba(255,255,255,0.66); /* transparency 66 */
 display:flex;
+align-items:center; /* centers About Us vertically */
 padding:40px;
 }
 .about-title{
 width:40%;
 font-family:"Comic Sans MS";
 font-size:62px;
+text-align:center;
 }
 .about-text{
 width:60%;
@@ -49,7 +53,7 @@ font-family:"Footlight MT Light";
 font-size:33px;
 }
 
-/* SECTION 3 & 4 FIXED */
+/* SECTION 3 & 4 (UNCHANGED) */
 .menu-section{
 padding:60px;
 text-align:center;
@@ -82,7 +86,7 @@ font-family:"Baskerville Old Face";
 color:#5a3a2e;
 }
 
-/* SECTION 5 BACK TO ORIGINAL STYLE */
+/* SECTION 5 (RESTORED ORIGINAL STYLE) */
 .vision-section{
 background-image:url("https://i.ibb.co/93TTJrkT/cookies.jpg");
 background-size:cover;
@@ -96,14 +100,14 @@ padding:50px;
 .vision-overlay h2{
 font-family:"Footlight MT Light";
 font-weight:bold;
-color:#ffb347;
+color:#ffb347; /* light orange */
 }
 .vision-overlay p{
 font-family:"Baskerville Old Face";
 color:#ffb347;
 }
 
-/* SECTION 6 FIXED */
+/* SECTION 6 (UNCHANGED) */
 .contact-section{
 display:flex;
 padding:60px;
