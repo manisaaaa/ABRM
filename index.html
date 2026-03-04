@@ -3,14 +3,7 @@
 <head>
 <title>Little ABRM Bakes</title>
 <style>
-body{
-margin:0;
-}
-
-/* COMMON SECTION SPACING */
-.section-gap{
-margin-bottom:60px;
-}
+body{margin:0;}
 
 /* SECTION 1 */
 .header-hero{
@@ -18,6 +11,7 @@ display:flex;
 height:100vh;
 padding:50px;
 align-items:center;
+background:#fff7f2;
 }
 .text-area{
 width:50%;
@@ -27,10 +21,14 @@ text-align:center;
 font-family:"Lucida Calligraphy";
 font-size:60px;
 font-weight:bold;
+color:#c47a5a;
+letter-spacing:2px;
+text-shadow:2px 2px 6px rgba(0,0,0,0.2);
 }
 .text-area p{
 font-family:"Comic Sans MS";
-font-size:28px;
+font-size:30px;
+color:#8b5e3c;
 }
 .image-area{width:50%;}
 .image-area img{width:100%;border-radius:20px;}
@@ -66,7 +64,7 @@ text-align:center;
 }
 .menu-title{
 font-family:"Lucida Calligraphy";
-font-size:48px;
+font-size:65px; /* changed */
 margin-bottom:40px;
 }
 .menu-grid{
@@ -122,21 +120,29 @@ padding:60px;
 width:40%;
 font-family:"Lucida Calligraphy";
 font-size:60px;
-color:#c49a6c;
+color:#c47a5a;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
 }
 .contact-right{
 width:60%;
 font-family:"Baskerville Old Face";
 font-size:27px;
 font-weight:bold;
-color:pink;
+color:black;
 }
+.highlight{
+color:#c47a5a;
+}
+
 .footer{
 text-align:center;
 font-family:"Gill Sans MT";
 font-size:20px;
 color:pink;
-margin:40px 0;
+margin-top:20px;
 }
 </style>
 </head>
@@ -144,7 +150,7 @@ margin:40px 0;
 <body>
 
 <!-- SECTION 1 -->
-<div class="header-hero section-gap">
+<div class="header-hero">
 <div class="text-area">
 <h1>Little ABRM Bakes</h1>
 <p>Tiny Bites, Big Happiness ✨</p>
@@ -155,7 +161,7 @@ margin:40px 0;
 </div>
 
 <!-- SECTION 2 -->
-<div class="about-section section-gap">
+<div class="about-section">
 <div class="about-overlay">
 <div class="about-title">About Us</div>
 <div class="about-text">
@@ -165,7 +171,7 @@ Little Abrm Bakes is a home-based bakery that offers fresh and delicious mini de
 </div>
 
 <!-- SECTION 3 -->
-<div class="menu-section section-gap">
+<div class="menu-section">
 <div class="menu-title">Take a Bite!</div>
 <div class="menu-grid">
 <div class="menu-item">
@@ -189,7 +195,7 @@ Little Abrm Bakes is a home-based bakery that offers fresh and delicious mini de
 </div>
 
 <!-- SECTION 4 -->
-<div class="menu-section section-gap">
+<div class="menu-section">
 <div class="menu-grid">
 <div class="menu-item">
 <img src="https://i.ibb.co/XxQN2dsF/Brownie-with-Icecream.jpg">
@@ -212,7 +218,7 @@ Little Abrm Bakes is a home-based bakery that offers fresh and delicious mini de
 </div>
 
 <!-- SECTION 5 -->
-<div class="vision-section section-gap">
+<div class="vision-section">
 <div class="vision-overlay">
 <h2>Vision</h2>
 <p>Our vision is to become a trusted and loved mini bakery brand known for delicious small treats and beautiful presentation.</p>
@@ -227,17 +233,17 @@ Homemade with love ❤️
 </div>
 
 <!-- SECTION 6 -->
-<div class="contact-section section-gap">
+<div class="contact-section">
 <div class="contact-left">
 We'd love to<br>hear from<br>you!
 </div>
 
 <div class="contact-right">
-📍Location: Butwal, Rupandehi, Nepal<br>
-📞Contact us: 9768281253, 9745416869, 9811966295, 9821591982<br>
-✉️Email: abrmbakes005@gmail.com<br>
-🕘Opens: 9AM–9PM (except Saturday)<br>
-🍪 follow for sweet updates:
+<span class="highlight">📍Location:</span> Butwal, Rupandehi, Nepal<br>
+<span class="highlight">📞Contact us:</span> 9768281253, 9745416869, 9811966295, 9821591982<br>
+<span class="highlight">✉️Email:</span> abrmbakes005@gmail.com<br>
+<span class="highlight">🕘Opens:</span> 9AM–9PM (except Saturday)<br>
+<span class="highlight">🍪 Follow for sweet updates:</span>
 <a href="https://www.instagram.com/littleabrmbakes?igsh=cTQwNGFxdWJvaTIz">Instagram</a>
 </div>
 </div>
