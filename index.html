@@ -95,6 +95,56 @@ font-family:"Baskerville Old Face";
 color:#4b2e1f;
 }
 
+/* PRICE LIST */
+.price-section{
+padding:60px;
+text-align:center;
+font-family:"Baskerville Old Face";
+}
+.price-section h2{
+font-family:"Lucida Calligraphy";
+font-size:45px;
+color:#4b2e1f;
+text-shadow:2px 2px 6px rgba(0,0,0,0.3);
+}
+table{
+margin:auto;
+border-collapse:collapse;
+width:60%;
+}
+th,td{
+border:2px solid #4b2e1f;
+padding:12px;
+}
+th{
+background:#f5d6c6;
+}
+
+/* ORDER FORM */
+.order-section{
+padding:60px;
+text-align:center;
+}
+.order-section h2{
+font-family:"Lucida Calligraphy";
+font-size:45px;
+color:#4b2e1f;
+}
+input, select, textarea{
+width:300px;
+padding:10px;
+border-radius:8px;
+margin:5px;
+}
+button{
+padding:12px 25px;
+background:#c47a5a;
+color:white;
+border:none;
+border-radius:10px;
+font-size:18px;
+}
+
 /* SECTION 5 */
 .vision-section{
 background-image:url("https://i.ibb.co/93TTJrkT/cookies.jpg");
@@ -107,7 +157,7 @@ justify-content:center;
 margin-bottom:60px;
 }
 .vision-overlay{
-background:rgba(255,255,255,0.4); /* transparency 40% */
+background:rgba(255,255,255,0.4);
 text-align:center;
 width:80%;
 padding:60px;
@@ -161,6 +211,20 @@ font-family:"Gill Sans MT";
 font-size:20px;
 color:#c47a5a;
 margin-top:20px;
+}
+
+/* WhatsApp Button */
+.whatsapp-btn{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+font-size:18px;
+text-decoration:none;
+box-shadow:2px 2px 10px rgba(0,0,0,0.3);
 }
 </style>
 </head>
@@ -235,20 +299,52 @@ Little Abrm Bakes is a home-based bakery that offers fresh and delicious mini de
 </div>
 </div>
 
+<!-- PRICE LIST -->
+<div class="price-section">
+<h2>Price List</h2>
+<table>
+<tr><th>Item</th><th>Price</th></tr>
+<tr><td>Donuts</td><td>Rs.80</td></tr>
+<tr><td>Mini Cake</td><td>Rs.500</td></tr>
+<tr><td>Cookies</td><td>Rs.150</td></tr>
+<tr><td>Brownies</td><td>Rs.200</td></tr>
+<tr><td>Tiramisu</td><td>Rs.350</td></tr>
+</table>
+</div>
+
+<!-- ORDER FORM -->
+<div class="order-section">
+<h2>Order Now</h2>
+<form>
+<input type="text" placeholder="Your Name" required><br>
+<input type="tel" placeholder="Phone Number" required><br>
+<select>
+<option>Select Item</option>
+<option>Donuts</option>
+<option>Mini Cake</option>
+<option>Cookies</option>
+<option>Brownies</option>
+<option>Tiramisu</option>
+</select><br>
+<textarea placeholder="Your Order Details"></textarea><br>
+<button type="submit">Place Order</button>
+</form>
+</div>
+
 <!-- SECTION 5 -->
 <div class="vision-section">
-  <div class="vision-overlay">
-    <h2>Vision</h2>
-    <p>Our vision is to become a trusted and loved mini bakery brand known for delicious small treats and beautiful presentation.</p>
+<div class="vision-overlay">
+<h2>Vision</h2>
+<p>Our vision is to become a trusted and loved mini bakery brand known for delicious small treats and beautiful presentation.</p>
 
-    <h2>Brand Value</h2>
-    <p>
-      We believe:<br>
-      Small things create big happiness...<br>
-      Quality matters 😊<br>
-      Homemade with love ❤️
-    </p>
-  </div>
+<h2>Brand Value</h2>
+<p>
+We believe:<br>
+Small things create big happiness...<br>
+Quality matters 😊<br>
+Homemade with love ❤️
+</p>
+</div>
 </div>
 
 <!-- SECTION 6 -->
@@ -271,6 +367,9 @@ We'd love to<br>hear from<br>you!
 🍰 soft brown · cream · pastel pink 🧁<br>
 #homemadewithlove #minitreats
 </div>
+
+<!-- WhatsApp Button -->
+<a href="https://wa.me/9768281253" class="whatsapp-btn" target="_blank">💬 Order on WhatsApp</a>
 
 </body>
 </html>
