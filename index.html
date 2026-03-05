@@ -16,14 +16,29 @@ position:sticky;
 top:0;
 z-index:1000;
 box-shadow:0 2px 6px rgba(0,0,0,0.1);
+display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  position:relative;
 }
-.navbar a{
-margin:0 15px;
-text-decoration:none;
-font-family:"Comic Sans MS";
-color:#4b2e1f;
-font-size:18px;
-font-weight:bold;
+
+  /* Hamburger icon - hidden on desktop */
+.menu-icon{
+  display:none;        
+  font-size:28px;
+  cursor:pointer;
+  position:absolute;
+  left:20px;
+  top:15px;
+}
+.nav-links a{
+  margin:0 15px;
+  text-decoration:none;
+  font-family:"Comic Sans MS";
+  color:#4b2e1f;
+  font-size:18px;
+  font-weight:bold;
 }
 
 
@@ -297,6 +312,148 @@ font-size:20px;
 color:#c47a5a;
 margin-top:20px;
 }
+  /* MOBILE RESPONSIVE */
+@media screen and (max-width:768px){
+
+/* NAVBAR */
+
+  /* Show hamburger icon */
+.menu-icon{
+display:block;
+}
+
+/* Hide links initially on mobile */
+.nav-links{
+display:none;
+width:100%;
+text-align:center;
+flex-direction:column;
+}
+  /* Show links when toggled */
+.nav-links.show{
+display:flex;
+}
+
+.nav-links a{
+display:block;
+margin:12px 0;
+}
+
+/* HERO SECTION */
+.header-hero{
+flex-direction:column;
+padding:30px 15px;
+text-align:center;
+}
+
+.text-area{
+width:100%;
+}
+
+.text-area h1{
+font-size:38px;
+}
+
+.text-area p{
+font-size:20px;
+}
+
+.image-area{
+width:100%;
+margin-top:20px;
+}
+
+/* ABOUT SECTION */
+
+.about-overlay{
+flex-direction:column;
+padding:25px;
+}
+
+.about-title{
+width:100%;
+font-size:40px;
+margin-bottom:20px;
+}
+
+.about-text{
+width:100%;
+font-size:20px;
+text-align:center;
+}
+
+/* MENU */
+
+.menu-title{
+font-size:40px;
+}
+
+.menu-grid{
+flex-direction:column;
+align-items:center;
+}
+
+.menu-item{
+width:90%;
+}
+
+/* PRICE LIST */
+
+.price-item{
+width:90%;
+}
+
+.price-item h3{
+font-size:26px;
+}
+
+.price-item p{
+font-size:18px;
+}
+
+/* ORDER */
+
+.order-section h2{
+font-size:35px;
+}
+
+/* VISION */
+
+.vision-overlay h2{
+font-size:28px;
+}
+
+.vision-overlay p{
+font-size:20px;
+}
+
+/* CONTACT */
+
+.contact-section{
+flex-direction:column;
+text-align:center;
+}
+
+.contact-left{
+font-size:38px;
+}
+
+.contact-right{
+font-size:18px;
+text-align:center;
+}
+
+/* FLOAT BUTTONS */
+
+.instagram-float,
+.whatsapp-float{
+width:50px;
+height:50px;
+font-size:22px;
+}
+
+}
+
 </style>
 </head>
 
@@ -304,12 +461,15 @@ margin-top:20px;
 
 <!-- NAVBAR -->
 <div class="navbar">
-<a href="#">Home</a>
-<a href="#about">About</a>
-<a href="#menu">Menu</a>
-<a href="#price">Price</a>
-<a href="#order">Order</a>
-<a href="#contact">Contact</a>
+<span class="menu-icon" onclick="toggleMenu()">☰</span>
+  <div class="nav-links" id="navLinks">
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#menu">Menu</a>
+    <a href="#price">Price</a>
+    <a href="#order">Order</a>
+    <a href="#contact">Contact</a>
+  </div>
 </div>
 
 <!-- SECTION 1 -->
@@ -513,5 +673,30 @@ We'd love to<br>hear from<br>you!
 <a href="https://www.instagram.com/littleabrmbakes" class="instagram-float" target="_blank">📸</a>
 <a href="https://wa.me/9779768281253" class="whatsapp-float">💬</a>
 
+  <!-- JS -->
+<script>
+function sendOrder() {
+var name=document.getElementById("name").value;
+var phone=document.getElementById("phone").value;
+var item=document.getElementById("item").value;
+var details=document.getElementById("details").value;
+
+var message="New Order:%0AName: "+name+
+"%0APhone: "+phone+
+"%0AItem: "+item+
+"%0ADetails: "+details;
+
+  var wa_url="https://wa.me/9779768281253?text="+message;
+window.open(wa_url,"_blank");
+}
+
+// Hamburger toggle
+function toggleMenu(){
+  var menu = document.getElementById("navLinks");
+  menu.classList.toggle("show");
+}
+</script>
+
+  
 </body>
 </html>
